@@ -1,0 +1,13 @@
+一共四个方面：
+
+1）spring核心依赖
+spring-core、spring-beans、spring-context
+
+2）spring dao依赖（提供JDBCTemplate）
+spring-jdbc、spring-tx
+
+3）spring web依赖
+spring-web、spring-webmvc
+
+4）spring test依赖
+spring-test

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <!--等价于： Computer computer = new Computer() -->
+    <bean id="computer" class="com.dk.ioc.demo3.Computer">
+        <!--等价于： computer.setUsb(phone) -->
+        <property name="usb" ref="phone"></property>
+    </bean>
+
+    <!-- Camera camera = new Camera(); -->
+    <bean id="camera" class="com.dk.ioc.demo3.Camera"/>
+
+    <!--等价于： Phone phone = new Phone(); -->
+    <bean id="phone" class="com.dk.ioc.demo3.Phone">
+        <!--等价于： phone.setBrand("华为") -->
+        <property name="brand" value="华为"></property>
+    </bean>
+
+    <!--<bean id="computer" class="com.dk.ioc.demo3.Computer">-->
+        <!--&lt;!&ndash;等价于： computer.setUsb(camera) &ndash;&gt;-->
+        <!--<property name="usb" ref="camera"></property>-->
+    <!--</bean>-->
+</beans>
