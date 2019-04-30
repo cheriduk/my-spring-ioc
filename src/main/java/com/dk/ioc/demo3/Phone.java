@@ -10,6 +10,7 @@ package com.dk.ioc.demo3;
 public class Phone implements IUsb{
     private String brand;
 
+    @Override
     public void useUSB() {
         System.out.println("******我是"+brand+"手机，我在使用USB充电！*****");
     }
